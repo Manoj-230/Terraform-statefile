@@ -1,0 +1,18 @@
+
+
+terraform import azurerm_resource_group.rg /subscriptions/28a659e3-7f8b-4051-8037-2fc40fed19d3/resourceGroups/sample
+
+terraform import azurerm_network_security_rule.rdp /subscriptions/28a659e3-7f8b-4051-8037-2fc40fed19d3/resourceGroups/sample/providers/Microsoft.Network/networkSecurityGroups/sample-nsg1/securityRules.rdp
+
+
+terraform import azurerm_subnet.subnet1 /subscriptions/28a659e3-7f8b-4051-8037-2fc40fed19d3/resourceGroups/sample/providers/Microsoft.Network/virtualNetworks/sample-1/subnet/subnet1
+
+terraform import azurerm_virtual_network.vnet1 /subscriptions/28a659e3-7f8b-4051-8037-2fc40fed19d3/resourceGroups/sample/providers/Microsoft.Network/virtualNetworks/sample-10
+
+
+terraform import azurerm_windows_virtual_machine.main /subscriptions/28a659e3-7f8b-4051-8037-2fc40fed19d3/resourceGroups/sample/providers/Microsoft.Compute/virtualMachines/sample-vmt01
+
+terraform import azurerm_subnet_network_security_group_association.nsg_subnet_assoc /subscriptions/28a659e3-7f8b-4051-8037-2fc40fed19d3/resourceGroups/sample/providers/Microsoft.Network/virtualNetworks/sample-10/subnets/subnet1
+
+
+terraform import azurerm_network_interface.nic1 /subscriptions/28a659e3-7f8b-4051-8037-2fc40fed19d3/resourceGroups/sample/providers/Microsoft.Network/networkInterfaces/sample-nic
